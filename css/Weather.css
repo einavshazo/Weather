@@ -1,0 +1,33 @@
+body 
+{
+	margin: 5px;
+	background-image: url("../image/background.png");
+    overflow: hidden;
+}
+
+.today_weather
+{
+	font-size: 120px;
+    display: inline-block;     
+    border: 10px;
+    margin: 15px;
+    color: white;
+}
+
+
+.days_after
+{
+	font-size: 40px;
+    display: inline-block;     
+    border: 10px;
+    margin: 15px;
+    color: white;	
+}
+
+
+
+
+
+
+
+

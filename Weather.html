@@ -6,35 +6,145 @@
 
 <head>
     
-    <link rel = "stylesheet" href = "Weather.css" />
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "css/Weather.css">
 	   
 </head>
 
 <body>
     <header>
-        <div class = "header">
-            <div class = "main_title">Weather </div> 		
-    
-            <div class = "input_txt">
-                <textarea type = "text" id = "inputBox">Search another city</textarea>
+        <div class = "header"> 
+                  
+            <div class="row"><br /></div>
+            <div class="row"><br /></div>
 
+            <!--search bar-->
+            <div class="row">
+                <div class="col-md-9 col-md-push-3"></div>
                 
-                <div class = "search_button">
-                    <a href = "#" class = "myButton" id = "Search_button">Search</a>
-	            </div>
+                <div class="col-md-3 col-md-pull-9">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="search_bar" placeholder="Search another city">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+
+            <div class="row"><br /></div>
+            <div class="row"><br /></div>
+            <div class="row"><br /></div>
+            <div class="row"><br /></div>
+
+            <!--arrow icon-->
+            <div class="row">
+                <div class="col-md-11 col-md-push-1"></div>
+
+                <div class="col-md-1 col-md-pull-11">
+                    <img src="./image/arrow.png" class="img-responsive" alt="Responsive image"> 
+                </div>
+            </div>
+
+            
+            <!--weather part-->
+            <div class="row">
+
+                <!--today weather-->
+                <div class="col-md-3 col-md-push-3">
+                    <div class = "today_weather">
+                        <div class="row">
+                            <h2>NEW YORK</h2>
+                        </div>
+
+                        <div class="row">
+                            <h6>today</h6>
+                        </div>
+
+                        <div class="row">
+                            23<img src="./image/Celsius.png" class="img-responsive" alt="Responsive image" style="height: 15%;">
+                        </div>
+
+                        <div class="row">
+                            <h6>sunny</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!--days after-->
+                <div class="col-md-3 col-md-push-3">
+                    <div class="p-3 mb-2 bg-primary text-white">
+                        <div class = "days_after">
+                            <div class="row">
+                                <h6>monday</h6>
+                            </div>
+
+                            <div class="row">
+                                <img src="./image/sun.png" class="img-responsive" alt="Responsive image">                         
+                            </div>
+
+                            <div class="row">
+                                26<img src="./image/Celsius.png" class="img-responsive" alt="Responsive image" style="width: 15%;">/ 19<img src="./image/Celsius.png" class="img-responsive" alt="Responsive image" style="width: 15%;">
+                            </div>
+
+                            <div class="row">
+                                <h6>sunny</h6>
+                            </div>        
+
+                        </div>
+                    </div> 
+                </div>
+
+                                
+                <!--days after-->
+                <div class="col-md-3 col-md-push-3">
+                    <div class="p-3 mb-2 bg-primary text-white">
+                        <div class = "days_after">
+                            <div class="row">
+                                <h6>tuesday</h6>
+                            </div>
+
+                            <div class="row">
+                                <img src="./image/rain.png" class="img-responsive" alt="Responsive image">
+                            </div>
+
+                            <div class="row">
+                                20<img src="./image/Celsius.png" class="img-responsive" alt="Responsive image" style="width: 15%;">/ 12<img src="./image/Celsius.png" class="img-responsive" alt="Responsive image" style="width: 15%;">
+                            </div>
+
+                            <div class="row">
+                                <h6>rain</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
     
-            </div>
-           
-            <div class = "weather">
-                <h2><u>Weather:</u></h2>
-            </div>
+                  
+                <!--days after-->
+                <div class="col-md-3 col-md-push-3">
+                    <div class="p-3 mb-2 bg-primary text-white">
+                        <div class = "days_after">
+                            <div class="row">
+                                <h6>wednesday</h6>
+                            </div>
 
-		</div>
+                            <div class="row">
+                                <img src="./image/cloudy.png" class="img-responsive" alt="Responsive image">
+                            </div>
 
-	</header>	
-	
+                            <div class="row">
+                                14<img src="./image/Celsius.png" class="img-responsive" alt="Responsive image" style="width: 15%;">/ 6<img src="./image/Celsius.png" class="img-responsive" alt="Responsive image" style="width: 15%;">
+                            </div>
+
+                            <div class="row">
+                                <h6>cloudy</h6>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+		    </div>
+        </div>
+    </header> 	
 </body>
 
 </html>
